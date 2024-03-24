@@ -1,5 +1,16 @@
 import styles from './style'
-import { Billing, Business, CardDeal, Clients, CTA, Footer, NavBar, Stats, Testimonials, Hero } from "./components";
+import {
+  Billing,
+  Business, 
+  CardDeal,
+   Clients,
+  CTA, 
+  Footer,
+  NavBar,
+   Stats, 
+   Testimonials,
+     Hero
+    } from "./components";
 
 
 function App() {
