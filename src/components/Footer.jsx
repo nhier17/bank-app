@@ -52,7 +52,9 @@ const Footer = () => {
           }`}
            key={social.id} 
            src={social.icon} 
-           alt="socials" />
+           alt="socials"
+           onClick={() => window.open(social.link)}
+            />
          ))}       
       </div>
       </div>
