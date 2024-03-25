@@ -21,7 +21,7 @@ const Footer = () => {
           {footerLinks.map((link) => (
             <div 
             className="flex flex-col ss:my-0 my-4 min-w-[150px]"
-            key={link.id}>
+            key={link.title}>
                    <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
               {link.title}
             </h4>
@@ -31,7 +31,8 @@ const Footer = () => {
                 className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
                   index !== link.links.length - 1 ? "mb-4" : "mb-0"
                 }`}
-                 key={card.name}>
+                  key={card.name}
+                >
                {card.name}
                 </li>
               ))}
@@ -50,7 +51,7 @@ const Footer = () => {
           className={`w-[21px] h-[21px] object-contain cursor-pointer ${
             index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
           }`}
-           key={social.id} 
+          key={social.id}
            src={social.icon} 
            alt="socials"
            onClick={() => window.open(social.link)}
